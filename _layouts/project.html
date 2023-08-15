@@ -67,7 +67,7 @@ layout: default
 
         {% for image in site.static_files %}
             {% if image.path contains concat %} 
-                <a href="{{ image.path }}" data-ngthumb="{{ image.path }}"></a>
+                <a href="{{ site.baseurl }}/{{ image.path }}" data-ngthumb="{{ site.baseurl }}/{{ image.path }}"></a>
 
             {% endif %}
         {% endfor %}
