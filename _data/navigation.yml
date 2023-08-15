@@ -1,0 +1,8 @@
+- name: Projekte
+  link: /
+
+- name: Über mich
+  link: /about.html
+
+- name: Kontakt
+  link: /contact.html

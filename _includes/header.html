@@ -1,0 +1,23 @@
+<header role="header">
+
+    <div class="container">
+        <h1>
+            <a href="{{ site.baseurl }}/" title="Elke Scheichenost"><img src="/assets/images/logo.png" title="Elke Scheichenost" alt="Elke Scheichenost"/></a>
+        </h1>
+
+        <nav role="header-nav" class="navy">
+            
+            <!-- logo -->
+
+
+            <!-- logo -->
+            <ul>
+            {% for item in site.data.navigation %}
+                <li {% if page.url == item.link %}class="nav-active"{% endif %}><a href="{{ item.link }}" >{{ item.name }}</a></li>
+            {% endfor %}
+            </ul> 
+        </nav>
+
+    </div>
+
+</header>

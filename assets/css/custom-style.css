@@ -1,0 +1,90 @@
+.line-height {
+    line-height: 68px;
+}
+
+header[role="header"] nav ul.open {
+    z-index: 1500; 
+}
+
+header[role="header"] nav #menu-button {
+    z-index: 1600; 
+}
+
+.grid figure h2 {
+    color: black;
+}
+
+.grid figure p {
+    color: black;
+}
+
+#openGalleryLink {
+    cursor: pointer;
+}
+
+figure.effect-oscar h2 {
+
+    -webkit-transform: unset;
+    transform: unset;
+
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+figure.effect-oscar {
+    /*background-color: #e2e2e2;*/
+    background-color: #5f650394;
+}
+
+header[role="header"] nav ul > li:hover a, header[role="header"] nav ul > li.nav-active a {
+    color: #606602;
+}
+
+main[role="main-inner-wrapper"] .about-content {
+    background-color: #626802a6;
+}
+
+main[role="main-home-wrapper"] article[role="pge-title-content"] header h2 span, main[role="main-inner-wrapper"] article[role="pge-title-content"] header h2 span {
+
+    color: #5f6503de;
+}
+main[role="main-inner-wrapper"] .thumbnails-pan section figure figcaption {
+
+    background-color: #5f650394;
+
+}
+
+main[role="main-inner-wrapper"] .thumbnails-pan section figure:hover,section.blog-content:hover article{ background-color:#5f650394; color:#FFF}
+
+.work-details header a{ 
+    color:#5f6503de; 
+}
+
+
+footer[role="footer"] nav > ul > li:hover a{ 
+    text-decoration:none; 
+    color:#5f650394
+}
+
+footer[role="footer"] ul[role="social-icons"] > li:hover a{ 
+    background-color:#5f650394
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    margin: 0 auto;
+}
+
+@media (pointer: fine) {
+    /*show project title only on hover*/
+    figure.effect-oscar:hover h2 {
+
+
+        -webkit-transform: unset;
+        transform: unset;
+
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    /*show project title only on hover*/
+    
+}

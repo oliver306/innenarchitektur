@@ -1,0 +1,12 @@
+- name: Twitter
+  link: "https://www.twitter.com"
+  icon: fa-twitter
+
+- name: Facebook
+  link: "https://www.facebook.com"
+  icon: fa-facebook
+
+- name: LinkedIn
+  link: "https://www.linkedin.com"
+  icon: fa-linkedin
+

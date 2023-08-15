@@ -1,0 +1,90 @@
+---
+layout: default
+---
+
+<main role="main-inner-wrapper" class="container">
+    <div class="work-details">
+
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-4">
+
+                <header role="work-title">
+
+                    <h2>{{ page.title }}</h2>
+
+                    <a id="openGalleryLink">Gallerie ansehen<i class="fa fa-external-link" aria-hidden="true"></i></a>
+
+                </header>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-8">
+
+                <section>
+
+                    {{ content }}
+                    
+                </section>
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+
+        <!--div class="work-images grid">
+
+            <ul class="grid-lod effect-2" id="grid">
+                {% assign concat = '/assets/images/project-images/ | append: page.slug %}
+                {% for image in site.static_files %}
+                    {% if image.path contains concat %}               
+                        <li><img src="{{ image.path }}" alt="" class="img-responsive"/></li>
+                    {% endif %}
+
+                {% endfor %}
+
+            </ul>
+
+        </div-->
+
+        <div id="project-gallery" data-nanogallery2='{
+            "itemsBaseURL": "",
+            "thumbnailWidth": "auto",
+            "thumbnailHeight": "400",
+            "thumbnailBorderVertical": 0,
+            "thumbnailBorderHorizontal": 0,
+            "thumbnailLabel": {
+              "position": "overImageOnBottom",
+              "display": false
+            },
+            "thumbnailHoverEffect2": "thumbnail_scale_100%_110%|thumbnail_brightness_80%_100%",
+            "thumbnailAlignment": "center",
+            "thumbnailGutterWidth": 4,
+            "thumbnailGutterHeight": 4,
+            "thumbnailOpenImage": true
+          }'>
+
+        {% assign concat = '/assets/images/project-images/ | append: page.slug %}
+
+        {% for image in site.static_files %}
+            {% if image.path contains concat %} 
+                <a href="{{ image.path }}" data-ngthumb="{{ image.path }}"></a>
+
+            {% endif %}
+        {% endfor %}
+         
+        </div>
+        
+
+
+    </div>
+    
+</main>
+        	
+
+            
+
+   
+            
+
+
+
