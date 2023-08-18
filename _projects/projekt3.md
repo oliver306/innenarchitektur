@@ -1,7 +1,8 @@
 ---
 title: Projekt 3
-slug: project3
-image: /assets/images/project-images/project3/IMG-20230811-WA0009.jpg
+
+imageFolderSlug: project3
+thumbnail: IMG-20230811-WA0009.jpg
 hovertext: Noch ein Projekt
 
 ---

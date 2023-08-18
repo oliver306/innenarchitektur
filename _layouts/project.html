@@ -63,7 +63,7 @@ layout: default
             "thumbnailOpenImage": true
           }'>
 
-        {% assign concat = '/assets/images/project-images/ | append: page.slug %}
+        {% assign concat = '/assets/images/project-images/ | append: page.imageFolderSlug | append: / %}
 
         {% for image in site.static_files %}
             {% if image.path contains concat %} 

@@ -1,3 +1,34 @@
+
+  
+@font-face {
+    font-family: 'GillSansBold';
+    src: url('font/Gill\ Sans\ Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'GillSans';
+    src: url('font/Gill\ Sans.woff') format('woff');
+}
+@font-face {
+    font-family: 'GillSansLight';
+    src: url('font/Gill\ Sans\ Light.woff') format('woff');
+}
+
+body {
+    font-family: 'GillSansLight', 'GillSans', sans-serif;;
+}
+body b{
+    font-family: 'GillSansBold', 'GillSansLight', 'GillSans', sans-serif;;
+}
+
+.work-details header a:hover i{ 
+    color:#5f6503de
+}
+
+.work-details header a{ 
+    color:#5f6503de; 
+}
+
+
 .line-height {
     line-height: 68px;
 }
@@ -56,9 +87,7 @@ main[role="main-inner-wrapper"] .thumbnails-pan section figure figcaption {
 
 main[role="main-inner-wrapper"] .thumbnails-pan section figure:hover,section.blog-content:hover article{ background-color:#5f650394; color:#FFF}
 
-.work-details header a{ 
-    color:#5f6503de; 
-}
+
 
 
 footer[role="footer"] nav > ul > li:hover a{ 

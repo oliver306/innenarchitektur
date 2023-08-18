@@ -1,8 +1,7 @@
 ---
 title: Projekt 2
-slug: project2
-image-folder: /assets/images/project-images/project2
-image: /assets/images/project-images/project2/IMG-20230811-WA0005.jpg
+imageFolderSlug: project2
+thumbnail: IMG-20230811-WA0005.jpg
 hovertext: Ein weiteres Projekt
 ---
 

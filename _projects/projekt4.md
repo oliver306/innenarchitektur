@@ -1,7 +1,9 @@
 ---
 title: Projekt 4
-slug: project4
-image: /assets/images/project-images/project4/IMG-20230811-WA0012.jpg
+
+imageFolderSlug: project4
+thumbnail: IMG-20230811-WA0012.jpg
+
 hovertext: Und wieder ein Projekt
 
 ---
