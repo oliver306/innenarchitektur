@@ -1,8 +1,8 @@
 ---
-title: Dachgeschosswohnung
-imageFolderSlug: dachgeschoss
+title: Wohnhaus 
+imageFolderSlug: wohnhausSalzburg
 thumbnail: 1.jpg
-hovertext: 1010 Wien
+hovertext: Salzburg Land
 
 
 ---

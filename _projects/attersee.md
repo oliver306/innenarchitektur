@@ -1,8 +1,8 @@
 ---
-title: Dachgeschosswohnung
-imageFolderSlug: dachgeschoss
-thumbnail: 1.jpg
-hovertext: 1010 Wien
+title: Privatwohnung
+imageFolderSlug: attersee
+thumbnail: 0.jpeg
+hovertext: Attersee
 
 
 ---

@@ -26,6 +26,12 @@
 - name: Andrea Eberle, Trachtengeschäft, Salzburg, Sigmund Haffnergasse
 - name: Golf & Countryclub Klessheim, Restaurant
 - name: Traumwerk, Museum Anger
+
 - name: Einfamilienhäuser
+  projectLink: wohnhausSalzburg
+
 - name: Dachgeschossausbauten
+  projectLink: dachgeschoss
+
 - name: Wohnungen
+  projectLink: attersee

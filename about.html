@@ -39,7 +39,7 @@ title: About
                 <p>
                 <ul class="reference-list-white dashed">
                     {% for item in site.data.references limit:firstHalf %}
-                        <li>{{ item.name }}</li>
+                        <li>{{ item.name }}{% if item.projectLink %}<a href="{{ site.baseurl }}/projects/{{ item.projectLink }}.html" class="reference-link">Link</a>{% endif %}</li>
                     {% endfor %}
                 </ul>
                 </p>
@@ -53,7 +53,7 @@ title: About
                 <p>
                 <ul class="reference-list-white dashed">
                     {% for item in site.data.references offset:firstHalf %}
-                        <li>{{ item.name }}</li>
+                        <li>{{ item.name }}{% if item.projectLink %}<a href="{{ site.baseurl }}/projects/{{ item.projectLink }}.html" class="reference-link">Link</a>{% endif %}</li>
                     {% endfor %}
                 </ul>
                 </p>

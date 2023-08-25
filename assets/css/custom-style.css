@@ -145,8 +145,13 @@ ul.dashed > li:before {
 }
 
 
-
 main[role="main-home-wrapper"] article[role="pge-title-content"] header, main[role="main-inner-wrapper"] article[role="pge-title-content"] header {
     padding-bottom: 5px;
     padding-top: 5px;
+}
+
+.reference-link {
+    color: black;
+    font-weight: bold;
+    margin-left: 5px;
 }
