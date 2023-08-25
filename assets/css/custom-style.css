@@ -117,3 +117,36 @@ footer[role="footer"] ul[role="social-icons"] > li:hover a{
     /*show project title only on hover*/
     
 }
+
+.reference-list-white {
+    color: white;
+    font-size: 20px; 
+}
+
+.reference-list-black {
+    color: black;
+    font-size: 20px;
+}
+
+
+
+ul {
+    margin: 0;
+}
+ul.dashed {
+    list-style-type: none;
+}
+ul.dashed > li {
+    text-indent: -5px;
+}
+ul.dashed > li:before {
+    content: "- ";
+    text-indent: -5px;
+}
+
+
+
+main[role="main-home-wrapper"] article[role="pge-title-content"] header, main[role="main-inner-wrapper"] article[role="pge-title-content"] header {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}

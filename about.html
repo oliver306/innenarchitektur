@@ -8,36 +8,58 @@ title: About
 
             
 
-        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+        <section class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
             <article role="pge-title-content">
 
                 <header>
 
-                    <h2><span class="line-height">Innen-architektur</span> Hier ein Text</h2>
+                    <h2><span class="line-height">Innenarchitektur</span> Referenzen:</h2>
 
                 </header>
 
-                <p>Darum geht es...</p>
+                <!--p>
+                    <ul class="reference-list-black">
 
+                        {% for item in site.data.references %}
+                            <li>{{ item.name }}</li>
+                        {% endfor %}
+                    </ul>
+                </p-->
             </article>
 
         </section>
 
-        
+        {% assign nrReferences = site.data.references.size %}
+        {% assign firstHalf = nrReferences | divided_by: 2 %}
 
         <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 
             <article class="about-content">
-
-                <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc, fiant sollemnes in futurum.</p>
-
-                <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consueum formas humanitatis per seacula quarta deciEodem modo tythepi, qui nunc, fiant sollemnes in futurum.</p>
-                
+                <p>
+                <ul class="reference-list-white dashed">
+                    {% for item in site.data.references limit:firstHalf %}
+                        <li>{{ item.name }}</li>
+                    {% endfor %}
+                </ul>
+                </p>
             </article>
 
         </section>
 
+        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+            <article class="about-content">
+                <p>
+                <ul class="reference-list-white dashed">
+                    {% for item in site.data.references offset:firstHalf %}
+                        <li>{{ item.name }}</li>
+                    {% endfor %}
+                </ul>
+                </p>
+            </article>
+
+        </section>
         
 
         <div class="clearfix"></div>

@@ -1,8 +1,8 @@
 ---
-title: Projekt Test
-imageFolderSlug: projectTest
-thumbnail: IMG-20230818-WA0006.jpg
-hovertext: Test Projekt
+title: Dachgeschoss
+imageFolderSlug: dachgeschoss
+thumbnail: 1.jpg
+hovertext: Eine Dachgeschosswohnung
 
 
 ---
