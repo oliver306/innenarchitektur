@@ -1,36 +1,34 @@
 <footer role="footer">
 
-    <div class="container">
-        <h1>
-            <a href="{{ site.baseurl }}/" title="Elke Scheichenost"><img src="{{ site.baseurl }}/assets/images/logo.png" title="Elke Scheichenost" alt="Elke Scheichenost"/></a>
-        </h1>
+    <h1>
+        <a href="{{ site.baseurl }}/" title="Elke Scheichenost" class="logo-link"><img src="{{ site.baseurl }}/assets/images/logo.svg" title="Elke Scheichenost" alt="Elke Scheichenost" class="logo-image"/></a>
+    </h1>
 
-        <nav role="footer-nav">
-            <ul>
-            {% for item in site.data.navigation %}
-                <li><a href="{{ site.baseurl }}{{ item.link }}" >{{ item.name }}</a></li>
-            {% endfor %}
-            </ul> 
-        </nav>
+    <nav role="footer-nav">
+        <ul>
+        {% for item in site.data.navigation %}
+            <li><a href="{{ site.baseurl }}{{ item.link }}" >{{ item.name }}</a></li>
+        {% endfor %}
+        </ul> 
+    </nav>
 
-        <ul role="social-icons">
-            {% for item in site.data.social_media %}
-                <li><a href="{{ item.link }}"><i class="fa {{ item.icon }}" aria-hidden="true"></i></a></li>
-            {% endfor %}
-        </ul>
-        <!--ul role="social-icons">
+    <ul role="social-icons">
+        {% for item in site.data.social_media %}
+            <li><a href="{{ item.link }}"><i class="fa {{ item.icon }}" aria-hidden="true"></i></a></li>
+        {% endfor %}
+    </ul>
+    <!--ul role="social-icons">
 
-            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 
-            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 
-            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 
-            <li><a href="#"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
 
-        </ul-->
+    </ul-->
 
-    </div>
     <p class="copy-right">&copy; 2015  avana LLC.. All rights Resved</p>
 
 </footer>

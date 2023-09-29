@@ -14,53 +14,48 @@ title: About
 
                 <header>
 
-                    <h2><span class="line-height">Innenarchitektur</span> Referenzen:</h2>
+                    <h2><!--span class="line-height">Innenarchitektur</span--> Referenzen:</h2>
 
                 </header>
 
-                <!--p>
-                    <ul class="reference-list-black">
-
-                        {% for item in site.data.references %}
-                            <li>{{ item.name }}</li>
-                        {% endfor %}
-                    </ul>
-                </p-->
+  
             </article>
 
         </section>
 
         {% assign nrReferences = site.data.references.size %}
         {% assign firstHalf = nrReferences | divided_by: 2 %}
+        <div class="row equal-height-columns">
 
-        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 
-            <article class="about-content">
-                <p>
-                <ul class="reference-list-white dashed">
-                    {% for item in site.data.references limit:firstHalf %}
-                        <li>{{ item.name }}{% if item.projectLink %}<a href="{{ site.baseurl }}/projects/{{ item.projectLink }}.html" class="reference-link">Link</a>{% endif %}</li>
-                    {% endfor %}
-                </ul>
-                </p>
-            </article>
+                <article class="about-content">
+                    <p>
+                    <ul class="reference-list-white dashed">
+                        {% for item in site.data.references limit:firstHalf %}
+                            <li>{{ item.name }}{% if item.projectLink %}<a href="{{ site.baseurl }}/projects/{{ item.projectLink }}.html" class="reference-link">Link</a>{% endif %}</li>
+                        {% endfor %}
+                    </ul>
+                    </p>
+                </article>
 
-        </section>
+            </section>
 
-        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 
-            <article class="about-content">
-                <p>
-                <ul class="reference-list-white dashed">
-                    {% for item in site.data.references offset:firstHalf %}
-                        <li>{{ item.name }}{% if item.projectLink %}<a href="{{ site.baseurl }}/projects/{{ item.projectLink }}.html" class="reference-link">Link</a>{% endif %}</li>
-                    {% endfor %}
-                </ul>
-                </p>
-            </article>
+                <article class="about-content">
+                    <p>
+                    <ul class="reference-list-white dashed">
+                        {% for item in site.data.references offset:firstHalf %}
+                            <li>{{ item.name }}{% if item.projectLink %}<a href="{{ site.baseurl }}/projects/{{ item.projectLink }}.html" class="reference-link">Ansehen</a>{% endif %}</li>
+                        {% endfor %}
+                    </ul>
+                    </p>
+                </article>
 
-        </section>
+            </section>
         
+        </div>
 
         <div class="clearfix"></div>
 
@@ -86,7 +81,7 @@ title: About
 
                 </section-->
 
-                <section class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                <!--section class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 
                     <figure>
 
@@ -102,7 +97,7 @@ title: About
 
                     </figure>
 
-                </section>
+                </section-->
 
                 <!--section class="col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
 

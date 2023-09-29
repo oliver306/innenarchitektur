@@ -72,7 +72,8 @@ header[role="header"] nav ul > li:hover a, header[role="header"] nav ul > li.nav
 }
 
 main[role="main-inner-wrapper"] .about-content {
-    background-color: #626802a6;
+    background-color: transparent;
+    border: solid 1px white;
 }
 
 main[role="main-home-wrapper"] article[role="pge-title-content"] header h2 span, main[role="main-inner-wrapper"] article[role="pge-title-content"] header h2 span {
@@ -128,6 +129,21 @@ footer[role="footer"] ul[role="social-icons"] > li:hover a{
     font-size: 20px;
 }
 
+.equal-height-columns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.equal-height-columns > section {
+    flex: 1;
+    margin: 10px; /* Optional: Add margin for spacing between columns */
+    padding: 15px; /* Optional: Add padding to sections */
+    border: 1px solid #ccc; /* Optional: Add borders to sections */
+    background-color: #626802a6;
+
+    border: 1px solid #626802a6; /* Add a border */
+    /*box-shadow: 0 0 0 0.5cm*/ #f6f6f6 inset; /* Add an inset box shadow with an offset of 1cm */
+}
 
 
 ul {
@@ -151,7 +167,23 @@ main[role="main-home-wrapper"] article[role="pge-title-content"] header, main[ro
 }
 
 .reference-link {
-    color: #504c4c;
+    color: #413823;
+    text-decoration: underline;
     font-weight: bold;
     margin-left: 5px;
 }
+
+header .logo-image {
+    width: 120%;
+    /*transform: scale(1.2); 
+    transform-origin: center;*/
+}
+
+footer .logo-image {
+    /*width: 100%;*/
+    transform: scale(1.8); /* Adjust the scale factor as needed */
+    transform-origin: center;
+}
+
+
+
