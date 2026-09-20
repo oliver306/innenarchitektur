@@ -1,0 +1,67 @@
+---
+title: About
+---
+
+
+<main role="main-inner-wrapper" class="container">
+    <div class="row">
+
+            
+
+        <section class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+
+            <article role="pge-title-content">
+
+                <header>
+
+                    <h2><!--span class="line-height">Innenarchitektur</span--> Referenzen:</h2>
+
+                </header>
+
+  
+            </article>
+
+        </section>
+
+        {% assign nrReferences = site.data.references.size %}
+        {% assign firstHalf = nrReferences | divided_by: 2 %}
+        <div class="row equal-height-columns">
+
+            <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+                <article class="about-content">
+                    <p>
+                    <ul class="reference-list-white dashed">
+                        {% for item in site.data.references limit:firstHalf %}
+                            <li>{{ item.name }}{% if item.projectLink %}<a href="{{ site.baseurl }}/projects/{{ item.projectLink }}.html" class="reference-link">Link</a>{% endif %}</li>
+                        {% endfor %}
+                    </ul>
+                    </p>
+                </article>
+
+            </section>
+
+            <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+                <article class="about-content">
+                    <p>
+                    <ul class="reference-list-white dashed">
+                        {% for item in site.data.references offset:firstHalf %}
+                            <li>{{ item.name }}{% if item.projectLink %}<a href="{{ site.baseurl }}/projects/{{ item.projectLink }}.html" class="reference-link">Ansehen</a>{% endif %}</li>
+                        {% endfor %}
+                    </ul>
+                    </p>
+                </article>
+
+            </section>
+        
+        </div>
+
+        <div class="clearfix"></div>
+
+    
+
+
+    </div>
+
+</main>

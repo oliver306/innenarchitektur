@@ -31,20 +31,7 @@ layout: default
         </div>
         <div class="clearfix"></div>
 
-        <!--div class="work-images grid">
 
-            <ul class="grid-lod effect-2" id="grid">
-                {% assign concat = '/assets/images/project-images/ | append: page.slug %}
-                {% for image in site.static_files %}
-                    {% if image.path contains concat %}               
-                        <li><img src="{{ image.path }}" alt="" class="img-responsive"/></li>
-                    {% endif %}
-
-                {% endfor %}
-
-            </ul>
-
-        </div-->
 
         <div id="project-gallery" data-nanogallery2='{
             "itemsBaseURL": "",
@@ -63,7 +50,7 @@ layout: default
             "thumbnailOpenImage": true
           }'>
 
-        {% assign concat = '/assets/images/project-images/ | append: page.imageFolderSlug | append: / %}
+        {% assign concat = '/assets/images/project-images/' | append: page.imageFolderSlug | append: '/' %}
 
         {% for image in site.static_files %}
             {% if image.path contains concat %} 

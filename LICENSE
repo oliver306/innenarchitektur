@@ -1,6 +1,18 @@
+This repository contains material under several different licenses.
+Please read this file before reusing anything from it.
+
+====================================================================
+1. Site source code
+====================================================================
+
+The Jekyll layouts, includes, collections, configuration and the
+custom CSS/JavaScript written for this site (notably
+assets/css/custom-style.css and assets/js/my_custom.js) are released
+under the MIT License:
+
 MIT License
 
-Copyright (c) 2023 oliver306
+Copyright (c) 2023-2026 oliver306
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +31,44 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+====================================================================
+2. Photographs and site content
+====================================================================
+
+Copyright (c) Elke Scheichenost. All rights reserved.
+
+All photographs under assets/images/ (including every project gallery
+in assets/images/project-images/ and the _big originals), the logo,
+and the German-language text describing the projects, references and
+the business are NOT covered by the MIT License above. They may not be
+copied, redistributed or reused without written permission.
+
+====================================================================
+3. Third-party components
+====================================================================
+
+The following are included under their own licenses and are covered by
+neither section above:
+
+  Bootstrap 3.3.6         MIT            (c) 2011-2015 Twitter, Inc.
+  jQuery 1.11.3           MIT            (c) 2005-2015 jQuery Foundation
+  Font Awesome 4.6.3      Font: SIL OFL 1.1 / CSS: MIT
+  nanogallery2 3.0.5      GPLv3 or commercial licence
+  Masonry 3.0.0           MIT
+  imagesLoaded 3.0.2      MIT
+  Modernizr 2.6.2         MIT & BSD
+  HTML5 Shiv 3.7.2        MIT / GPL2
+  classie, AnimOnScroll   MIT (Codrops)
+  Lato (webfont)          SIL Open Font License 1.1
+                          (c) Lukasz Dziedzic, self-hosted in
+                          assets/css/font/lato-*.woff2
+
+One item in this repository has unresolved licensing. It is recorded
+here so that nobody treats it as covered by section 1:
+
+  HTML/CSS template ("avana LLC" - assets/css/style.css,
+  assets/css/responsive.css and the markup derived from them).
+  License UNKNOWN: the theme header ships with the Template URI,
+  Author, License and License URI fields all blank, and no license
+  file accompanied it. Provenance unresolved.

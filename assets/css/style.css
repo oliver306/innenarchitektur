@@ -32,7 +32,8 @@
 
 */
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+/* Google Fonts import removed: it sent every visitor's IP to Google (GDPR).
+   Type is self-hosted Lato, declared in custom-style.css. */
 
 html {
 
@@ -160,7 +161,7 @@ a:focus, img:focus, button:focus, .btn:focus {outline: none;}
 
 ::selection {background-color: #fb5353;color: #fff;text-shadow: none;}
 
-@font-face {font-family: 'Open Sans', sans-serif;}
+/* removed: malformed no-op @font-face for 'Open Sans' (no src descriptor) */
 
 /*===== Header ===*/
 
